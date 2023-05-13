@@ -16,7 +16,8 @@ export default {
   },
   methods: {
     getCategoryData() {
-      axios.get("http://igdb.kro.kr/lostark/api/getMyCharacter")
+      axios.get("http://igdb.kro.kr/lostark/api/getMyCharacter",
+      )
       .then((res) => {
         console.log(res.data);
       })

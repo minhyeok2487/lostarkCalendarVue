@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     getCategoryData() {
-      axios.get("https://172.30.1.51:8080/lostark/api/getMyCharacter")
+      axios.get("https://172.30.1.51/lostark/api/getMyCharacter")
       .then((res) => {
         this.message = res.data;
         console.log(res.data);

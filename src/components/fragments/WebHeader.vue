@@ -16,9 +16,8 @@ export default {
   },
   methods: {
     getCategoryData() {
-      axios.get("http://igdb.kro.kr/lostark/api/saveMarketData/50000")
+      axios.get("http://igdb.kro.kr/lostark/api/getMyCharacter")
       .then((res) => {
-        this.message = res.data;
         console.log(res.data);
       })
       .catch((err) => {
